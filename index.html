@@ -4,15 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>My Github Root for Website Presentation</title>
-    <link rel="stylesheet" href="./style.css">
+    <title>Polymorphier's Github IO Website</title>
+    <link rel="stylesheet" href="dist/light-resived.css">
     <link rel="icon" href="./icon.png" type="image/png">
   </head>
   <body>
     <main>
         <h1>Welcome to my website</h1>
 
-        <h2>What do I have to offer</h2>
+        <h2>Project: </h2>
+
+        <ol>
+          <script>
+            const HomePage = "https://polymorphier.github.io/"
+            var ProjectList = ["game_website"];
+            ProjectList.forEach((p) => {
+              document.writeln(`<li><a href="${HomePage}${p}/" target="_blank">${p}</a></li>`);
+            });
+          </script>
+        </ol>  
 
         <h3>1. Financial Benefits</h3>
 
@@ -26,6 +36,5 @@
 
         <h2>Conclusion</h2>
     </main>
-	<script src="index.js"></script>
   </body>
 </html>
