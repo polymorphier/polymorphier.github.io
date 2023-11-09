@@ -20,7 +20,9 @@
         <ol>
           <script>
             const HomePage = "https://polymorphier.github.io/"
-            var ProjectList = ["game_website"];
+            var ProjectList = [];
+            ProjectList.concat(["game_website"]);
+
             ProjectList.forEach((p) => {
               document.writeln(`<li><a href="${HomePage}${p}/" target="_blank">${p}</a></li>`);
             });
